@@ -5,5 +5,13 @@
         {"store": "Ulta", "amount": 107.00, "date": "August 16, 2020", "cat": "beauty"},
         {"store": "Vans", "amount": 235.00, "date": "August 02, 2020", "cat": "clothing"},
         {"store": "GameStop", "amount": 145.53, "date": "July 07, 2020", "cat": "entertainment"}
-    ]
+    ],
+
+    "user_data": {
+        "budget": 950.00,
+        "username": "Some Person",
+        "email": "someperson@gmail.com"
+    },
+
+    "categories": ["Food", "Entertainment", "Beauty", "Sports", "Work", "General", "Home", "Clothing"]
 }
