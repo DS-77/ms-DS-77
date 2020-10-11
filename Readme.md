@@ -5,7 +5,7 @@ A simple receipt taking app that helps you manage your money.
 #### Demo
 
 Things todo:
-- [ ] Simple Dashboard
-- [ ] Details Page
+- [x] Simple Dashboard
+- [x] Details Page
   - [ ] Be able to edit and delete
-- [ ] Search Page
+- [ ] Settings Page

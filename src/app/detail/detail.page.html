@@ -23,7 +23,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen>
   <ion-searchbar [(ngModel)]="filter_text" showCancelButton="focus" animated></ion-searchbar>
   <h1>Recent Purchases</h1>
   <div *ngFor="let item of data_store | filter : filter_text">
