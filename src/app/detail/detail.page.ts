@@ -8,16 +8,18 @@ import * as data from '../../assets/test_data.json';
 })
 export class DetailPage implements OnInit {
 
-  private data_store = new Set(data.stores);
-  private filters = [];
+  private data_store = data.stores;
+  private filter_text: string;
+
   constructor() { }
 
   delete(item) {
-    // console.log(item);
-    this.data_store.delete(item);
+    const index = this.data_store.indexOf(item, 0);
+    if (index > -1) {
+      this.data_store.splice(index, 1);
+    }
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
