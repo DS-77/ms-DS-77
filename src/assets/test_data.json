@@ -1,0 +1,9 @@
+{
+    "stores": [
+        {"store": "Target", "amount": 50.00, "date": "September 12, 2020"},
+        {"store": "Starbucks", "amount": 12.47, "date": "September 09, 2020"},
+        {"store": "Ulta", "amount": 107.00, "date": "August 16, 2020"},
+        {"store": "Vans", "amount": 235.00, "date": "August 02, 2020"},
+        {"store": "GameStop", "amount": 145.53, "date": "July 07, 2020"}
+    ]
+}

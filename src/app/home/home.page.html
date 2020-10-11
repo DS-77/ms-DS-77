@@ -1,20 +1,33 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+    <ion-avatar slot="end">
+      <img src="https://clinicforspecialchildren.org/wp-content/uploads/2016/08/avatar-placeholder.gif">
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content fullscreen>
+  <h3>Total amount spent</h3>
+  <h1>$ 950.00</h1>
+  <ion-chip color="success">+50.00</ion-chip>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div>
+    <ion-list>
+      <ion-list-header>Transactions</ion-list-header>
+
+      <ion-item *ngFor="let item of data_store">
+        <ion-label>
+          <h2>{{ item['store'] }}</h2>
+          <p>Amount: {{ item['amount'] }}</p>
+          <p>Date: {{ item['date'] }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
   </div>
 </ion-content>
