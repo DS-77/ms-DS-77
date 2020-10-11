@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit Data</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="edit_data" (ngSubmit)="save()">
+    <ion-item>
+      <ion-label>Store</ion-label>
+        <ion-input (ionInput)="print()" [(ngModel)]="obj.name" [placeholder]="item['store']" type="text" formControlName="name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Amount</ion-label>
+        <ion-input [placeholder]="item['amount']" type="number" formControlName="amount" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Date</ion-label>
+        <ion-input type="date" formControlName="date" required></ion-input>
+    </ion-item>
+    <!-- [disabled]="!edit_data.valid" -->
+    <ion-button type="submit" >Submit</ion-button>
+  </form>
+</ion-content>
