@@ -10,6 +10,7 @@ import * as data from '../../assets/test_data.json';
 export class HomePage {
 
   private data_store = data.stores;
+  private user = data.user_data;
 
   constructor() {}
 

@@ -28,9 +28,9 @@
 </ion-menu>
 
 <!-- Main Page Content -->
-<ion-content fullscreen>
+<ion-content id="home-content">
   <h3>Total amount spent</h3>
-  <h1>$ 950.00</h1>
+  <h1>{{ user['budget'] | currency}}</h1>
   <ion-chip color="success">+50.00</ion-chip>
 
   <div>
@@ -40,7 +40,7 @@
       <ion-item *ngFor="let item of data_store">
         <ion-label>
           <h2>{{ item['store'] }}</h2>
-          <p>Amount: {{ item['amount'] | number}}</p>
+          <p>Amount: {{ item['amount'] | currency}}</p>
           <p>Date: {{ item['date'] }}</p>
         </ion-label>
       </ion-item>
