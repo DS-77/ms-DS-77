@@ -7,13 +7,14 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item><ion-nav [routerLink]="['dash']">Dashboard</ion-nav></ion-item>
-      <ion-item><ion-nav [routerLink]="['']">Settings</ion-nav></ion-item>
-      <ion-item><ion-nav [routerLink]="['']">Log Out</ion-nav></ion-item>
+      <ion-item [routerLink]="['']">Dashboard</ion-item>
+      <ion-item [routerLink]="['/settings']">Settings</ion-item>
+      <ion-item [routerLink]="['']">Logout</ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
 
+<!-- Toolbar -->
 <ion-header id="main">
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -23,6 +24,7 @@
   </ion-toolbar>
 </ion-header>
 
+<!-- Detail Content -->
 <ion-content fullscreen>
   <ion-searchbar [(ngModel)]="filter_text" showCancelButton="focus" animated></ion-searchbar>
   <h1>Recent Purchases</h1>
