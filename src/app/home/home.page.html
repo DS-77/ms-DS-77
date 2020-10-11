@@ -20,10 +20,10 @@
   </ion-header>
   <ion-content>
     <ion-list>
-      <ion-item>Search</ion-item>
-      <ion-item>Detail View</ion-item>
-      <ion-item>Settings</ion-item>
-      <ion-item color="warning">Log Out</ion-item>
+      <ion-item><ion-nav [routerLink]="['']">Search</ion-nav></ion-item>
+      <ion-item><ion-nav [routerLink]="['/detail']">Detail View</ion-nav></ion-item>
+      <ion-item><ion-nav [routerLink]="['']">Settings</ion-nav></ion-item>
+      <ion-item color="warning"><ion-nav [routerLink]="['']">Log Out</ion-nav></ion-item>
     </ion-list>
   </ion-content>
 </ion-menu>
